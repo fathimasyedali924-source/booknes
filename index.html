@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookNest - Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+    <h1>📚 BookNest</h1>
+    <nav>
+        <a href="#home">Home</a>
+<a href="#books">Books</a>
+<a href="#cart">Cart</a>
+<a href="#orders">My Orders</a>
+<a href="#about">About</a>
+<a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Welcome to BookNest</h2>
+    <p>Find your favourite books in one place.</p>
+    <a href="#books" class="button">Explore Books</a>
+</section>
+
+<section id="books">
+    <h2>Our Books</h2>
+
+    <div class="book-container">
+
+        <div class="book">
+            <img class="book-image" src="https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg" alt="The Alchemist">
+            <h3>The Alchemist</h3>
+            <p>Paulo Coelho</p>
+            <p>₹299</p>
+            <button onclick="addToCart('The Alchemist', 299)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="book">
+            <img class="book-image" src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="Atomic Habits">
+            <h3>Atomic Habits</h3>
+            <p>James Clear</p>
+            <p>₹399</p>
+            <button onclick="addToCart('Atomic Habits', 399)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="book">
+            <img class="book-image" src="https://covers.openlibrary.org/b/isbn/9780143130727-L.jpg" alt="Ikigai">
+            <h3>Ikigai</h3>
+            <p>Hector Garcia</p>
+            <p>₹249</p>
+            <button onclick="addToCart('Ikigai', 249)">
+                Add to Cart
+            </button>
+        </div>
+<div class="book">
+    <img class="book-image"
+src="https://covers.openlibrary.org/b/isbn/9780439554930-L.jpg"
+alt="Harry Potter">
+    <h3>Harry Potter</h3>
+    <p>Robert Kiyosaki</p>
+    <p>₹349</p>
+    <button onclick="addToCart('Harry Potter', 349)">
+    Add to Cart
+</button>
+</div>
+
+<div class="book">
+    <img class="book-image"
+src="https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+alt="Think and Grow Rich">
+    <h3>Think and Grow Rich</h3>
+    <p>Napoleon Hill</p>
+    <p>₹299</p>
+    <button onclick="addToCart('Think and Grow Rich', 299)">
+        Add to Cart
+    </button>
+</div>
+
+    </div>
+</section>
+
+<section id="cart">
+    <h2>🛒 My Cart</h2>
+
+    <div id="cartItems">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button onclick="placeOrder()" class="order-button">
+        Place Order
+    </button>
+
+    <p id="message"></p>
+</section>
+
+<section id="orders">
+    <h2>📦 My Orders</h2>
+
+    <div id="ordersList">
+        <p>No orders placed yet.</p>
+    </div>
+</section>
+<section id="about">
+    <h2>About BookNest</h2>
+    <p>
+        BookNest is an online bookstore designed to make book shopping
+        simple and convenient. Users can explore books, add books to
+        their cart, place orders, and view their orders easily.
+    </p>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>📧 Email: booknest@example.com</p>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>📍 Location: Chennai, Tamil Nadu</p>
+</section>
+
+<footer>
+    <p>© 2026 BookNest - Online Bookstore</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
